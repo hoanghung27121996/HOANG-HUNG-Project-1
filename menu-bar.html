@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Menu Bar - test</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css.css"> -->
+    <style>
+        body{
+            margin: 0 auto;
+            font-size: 30px;       
+            font-family: 'Roboto', sans-serif;
+        }
+        ul.menu{
+            list-style: none;
+            background-color: black;
+            padding: 0;
+            margin: 0;
+            margin-top: 200px;
+            overflow: hidden;
+        }
+        ul.menu>li{
+            padding: 20 5;
+            float: right; 
+        }
+        ul.menu>li>a{
+            text-decoration: none;
+            color: white;
+            padding: 20 10;
+            transition: 0.3s;
+        }
+        ul.menu>li a:hover {
+            background-color: #00CDCD;
+            color: black;
+            transition: 0.5s;
+        }
+        ul.menu ul{             /* Ul-2*/
+            display: none;
+            /* visibility: hidden; */
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li.cha:hover >ul{
+            background-color: black;
+            display: block;
+            /* visibility: visible; */
+            margin-top: 20px;
+            box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.5);
+            transition: 1s;
+        }
+        li.cha ul>li{
+            padding: 20px 0px;
+            font-size: 20px ;
+            text-align: center;
+        }
+        li.cha>ul>li>a{
+            text-decoration: none;
+            color: white;
+            padding: 20px 42px;
+            transition: 0.3s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="float: left;background-color:aqua;padding: 20 20;">NGUYỄN HOÀNG HƯNG</div>
+    <ul class="menu">
+        <li><a href="#">MENU 5</a></li>
+        <li><a href="#">MENU 4</a></li>
+        <li class="cha">
+            <a href="#">MENU 3 <i class="fas fa-chevron-down"></i></a>
+            <ul >
+                <li><a href="#">Menu 3.1</a></li>
+                <li><a href="#">Menu 3.2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">MENU 2</a></li>
+        <li><a href="https://google.com" target="_blank">MENU 1</a></li>
+    </ul>
+    
+</body>
+</html>
